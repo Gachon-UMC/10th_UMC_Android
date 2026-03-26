@@ -14,52 +14,46 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         //위에서 정의한 버튼을 클릭했을 때의 행동 정의
-        binding.imageView1.setOnClickListener {
-            binding.textView4.setTextColor(Color.YELLOW)
-            binding.textView5.setTextColor(Color.BLACK)
-            binding.textView6.setTextColor(Color.BLACK)
-            binding.textView7.setTextColor(Color.BLACK)
-            binding.textView8.setTextColor(Color.BLACK)
+        binding.icHappy.setOnClickListener {
+            blackColors()
+            binding.happyView.setTextColor(Color.YELLOW)
         }
 
-        binding.imageView2.setOnClickListener {
-            binding.textView4.setTextColor(Color.BLACK)
-            binding.textView5.setTextColor(Color.CYAN)
-            binding.textView6.setTextColor(Color.BLACK)
-            binding.textView7.setTextColor(Color.BLACK)
-            binding.textView8.setTextColor(Color.BLACK)
+        binding.icExcied.setOnClickListener {
+            blackColors()
+            binding.excidView.setTextColor(Color.CYAN)
         }
 
-        binding.imageView3.setOnClickListener {
-            binding.textView4.setTextColor(Color.BLACK)
-            binding.textView5.setTextColor(Color.BLACK)
-            binding.textView6.setTextColor(Color.parseColor("#800080"))
-            binding.textView7.setTextColor(Color.BLACK)
-            binding.textView8.setTextColor(Color.BLACK)
+        binding.icSoso.setOnClickListener {
+            blackColors()
+            binding.sosoView.setTextColor(Color.parseColor("#800080"))
         }
 
-        binding.imageView4.setOnClickListener {
-            binding.textView4.setTextColor(Color.BLACK)
-            binding.textView5.setTextColor(Color.BLACK)
-            binding.textView6.setTextColor(Color.BLACK)
-            binding.textView7.setTextColor(Color.GREEN)
-            binding.textView8.setTextColor(Color.BLACK)
+        binding.icAnxiety.setOnClickListener {
+            blackColors()
+            binding.anxietyView.setTextColor(Color.GREEN)
 
         }
 
-        binding.imageView5.setOnClickListener {
-            binding.textView4.setTextColor(Color.BLACK)
-            binding.textView5.setTextColor(Color.BLACK)
-            binding.textView6.setTextColor(Color.BLACK)
-            binding.textView7.setTextColor(Color.BLACK)
-            binding.textView8.setTextColor(Color.RED)
+        binding.icAngry.setOnClickListener {
+            blackColors()
+            binding.angryView.setTextColor(Color.RED)
         }
 
 
     }
+    private fun blackColors() {
+        binding.happyView.setTextColor(Color.BLACK)
+        binding.excidView.setTextColor(Color.BLACK)
+        binding.sosoView.setTextColor(Color.BLACK)
+        binding.anxietyView.setTextColor(Color.BLACK)
+        binding.angryView.setTextColor(Color.BLACK)
+    }
+
 }
