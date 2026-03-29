@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 하루는 어땠나요?"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감정우표를 선택해주세요"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택한 감정우표를 기반으로 당신의 하루를 기록해드려요."
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/iv_stamp_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img1" />
+        <TextView
+            android:id="@+id/tv_emotion_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더없이 행복한 하루였어요"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_stamp_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img2" />
+        <TextView
+            android:id="@+id/tv_emotion_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="들뜨고 흥분돼요"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_stamp_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img3" />
+        <TextView
+            android:id="@+id/tv_emotion_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평범한 하루였어요"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_stamp_4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img4" />
+        <TextView
+            android:id="@+id/tv_emotion_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "생각이 많아지고 불안해요"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_stamp_5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img5" />
+        <TextView
+            android:id="@+id/tv_emotion_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부글부글 화가 나요"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
