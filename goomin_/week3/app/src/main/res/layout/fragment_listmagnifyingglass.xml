@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="48dp"
+    android:paddingEnd="24dp">
+
+    <!-- 탭 박스 (323 x 56 기준) -->
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <!-- 전체 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tabAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="전체"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#000000"/>
+
+        </RelativeLayout>
+
+        <!-- Tops -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tops &amp; T-Shirts"
+                android:textSize="15sp"
+                android:textColor="#8E8E8E"/>
+
+        </LinearLayout>
+
+        <!-- Shoes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoes"
+                android:textSize="15sp"
+                android:textColor="#8E8E8E"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical"-->
+<!--android:paddingStart="24dp"-->
+<!--android:paddingTop="48dp"-->
+<!--android:paddingEnd="24dp">-->
+
+<!--&lt;!&ndash; 탭 박스 (Horizontal Scroll 지원) &ndash;&gt;-->
+<!--<HorizontalScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:scrollbars="none">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        &lt;!&ndash; 전체 &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tabAll"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="전체"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#000000"-->
+<!--            android:paddingHorizontal="12dp"/>-->
+
+<!--        &lt;!&ndash; Tops &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tabTops"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Tops & T-Shirts"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#8E8E8E"-->
+<!--            android:paddingHorizontal="12dp"-->
+<!--            android:layout_marginStart="16dp"/>-->
+
+<!--        &lt;!&ndash; Shoes &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tabShoes"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Shoes"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#8E8E8E"-->
+<!--            android:paddingHorizontal="12dp"-->
+<!--            android:layout_marginStart="16dp"/>-->
+
+<!--        &lt;!&ndash; 추가 탭 가능 &ndash;&gt;-->
+<!--    </LinearLayout>-->
+<!--</HorizontalScrollView>-->
+
+<!--&lt;!&ndash; 선택된 탭을 나타낼 수 있는 구분선 &ndash;&gt;-->
+<!--<View-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="1dp"-->
+<!--    android:background="#E0E0E0"-->
+<!--    android:layout_marginTop="8dp"/>-->
+<!--<androidx.recyclerview.widget.RecyclerView-->
+<!--    android:id="@+id/listRecyclerView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_marginTop="8dp"-->
+<!--    android:layout_weight="1"/>-->
+
+<!--</LinearLayout>-->
