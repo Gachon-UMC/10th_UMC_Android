@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- 상단바 (고정) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_product_detail_back"
+            app:tint="#000000" />
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nike Everyday Plus Cush..."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_product_detail_magnifyingglass"
+            app:tint="#000000"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- ScrollView (제품 상세 내용 + 버튼) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 제품 이미지 -->
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_socks1"
+                android:contentDescription="제품 이미지"/>
+
+            <!-- 제품 이름/상세 텍스트 -->
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Training Crew Socks"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike Everyday Plus Cushioned"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/productCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="US$10"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="The Nike Everyday Plus Cushioned Socks bring comfort to your workout with extra cushioning under the heel and forefoot and a snug, supportive arch band. Sweat-wicking power and breathability up top help keep your feet dry and cool to help push you through that extra set."
+                android:textColor="#444444"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/productOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· Shown: Multi-Color\n· Style: SX6897-965"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/productDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Product Details"
+                android:textSize="15sp"
+                android:textColor="#808080"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <Button
+                    android:id="@+id/btnSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="사이즈 선택"
+                    android:textColor="#000000"
+                    android:backgroundTint="#EEEEEE"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_down"
+                    android:drawableTint="#000000"
+                    android:drawablePadding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnBag"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="장바구니에 추가"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnwish"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="위시리스트"
+                    android:textColor="#000000"
+                    android:backgroundTint="#EEEEEE"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_wish_heart"
+                    android:drawableTint="#000000"
+                    android:drawablePadding="8dp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
